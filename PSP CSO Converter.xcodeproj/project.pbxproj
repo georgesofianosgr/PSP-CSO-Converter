@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E58414B1712F21300398DE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E58414A1712F21300398DE0 /* Cocoa.framework */; };
+		5E5841551712F21300398DE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E5841531712F21300398DE0 /* InfoPlist.strings */; };
+		5E5841571712F21300398DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5841561712F21300398DE0 /* main.m */; };
+		5E58415B1712F21300398DE0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5841591712F21300398DE0 /* Credits.rtf */; };
+		5E58415E1712F21300398DE0 /* PCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E58415D1712F21300398DE0 /* PCCAppDelegate.m */; };
+		5E5841611712F21400398DE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E58415F1712F21400398DE0 /* MainMenu.xib */; };
+		5E5841691712F3BB00398DE0 /* dadDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5841681712F3BB00398DE0 /* dadDefault.png */; };
+		5E5841721712FD6400398DE0 /* NSDaDFileImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5841711712FD6400398DE0 /* NSDaDFileImageView.m */; };
+		5E5841751713000500398DE0 /* dadDrop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5841731713000500398DE0 /* dadDrop.gif */; };
+		5E5841761713000500398DE0 /* dadConverting.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5841741713000500398DE0 /* dadConverting.gif */; };
+		5E5841781713004800398DE0 /* exitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5841771713004800398DE0 /* exitButton.png */; };
+		5E58417A1713005A00398DE0 /* umdIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5E5841791713005A00398DE0 /* umdIcon.icns */; };
+		5E58417C171300B900398DE0 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E58417B171300B900398DE0 /* success.png */; };
+		5E58417E171300BE00398DE0 /* converting.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E58417D171300BE00398DE0 /* converting.png */; };
+		5E584180171300EC00398DE0 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E58417F171300EC00398DE0 /* error.png */; };
+		5E584182171300FF00398DE0 /* Iconlicious-Misc-Settings.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5E584181171300FF00398DE0 /* Iconlicious-Misc-Settings.icns */; };
+		5E58418A1713025000398DE0 /* CSOCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5841851713024F00398DE0 /* CSOCompressor.m */; };
+		5E58418B1713025000398DE0 /* CSODecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5841871713025000398DE0 /* CSODecompressor.m */; };
+		5E58418C1713025000398DE0 /* CSOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5841891713025000398DE0 /* CSOManager.m */; };
+		5EA7E4D717136600000A6C58 /* error.log in Resources */ = {isa = PBXBuildFile; fileRef = 5EA7E4D617136600000A6C58 /* error.log */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E5841471712F21300398DE0 /* PSP CSO Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PSP CSO Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E58414A1712F21300398DE0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5E58414D1712F21300398DE0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5E58414E1712F21300398DE0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5E58414F1712F21300398DE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E5841521712F21300398DE0 /* PSP CSO Converter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PSP CSO Converter-Info.plist"; sourceTree = "<group>"; };
+		5E5841541712F21300398DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E5841561712F21300398DE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E5841581712F21300398DE0 /* PSP CSO Converter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSP CSO Converter-Prefix.pch"; sourceTree = "<group>"; };
+		5E58415A1712F21300398DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5E58415C1712F21300398DE0 /* PCCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCAppDelegate.h; sourceTree = "<group>"; };
+		5E58415D1712F21300398DE0 /* PCCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCAppDelegate.m; sourceTree = "<group>"; };
+		5E5841601712F21400398DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5E5841681712F3BB00398DE0 /* dadDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dadDefault.png; sourceTree = "<group>"; };
+		5E5841701712FD6400398DE0 /* NSDaDFileImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDaDFileImageView.h; sourceTree = "<group>"; };
+		5E5841711712FD6400398DE0 /* NSDaDFileImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDaDFileImageView.m; sourceTree = "<group>"; };
+		5E5841731713000500398DE0 /* dadDrop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dadDrop.gif; sourceTree = "<group>"; };
+		5E5841741713000500398DE0 /* dadConverting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dadConverting.gif; sourceTree = "<group>"; };
+		5E5841771713004800398DE0 /* exitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exitButton.png; sourceTree = "<group>"; };
+		5E5841791713005A00398DE0 /* umdIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = umdIcon.icns; sourceTree = "<group>"; };
+		5E58417B171300B900398DE0 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		5E58417D171300BE00398DE0 /* converting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = converting.png; sourceTree = "<group>"; };
+		5E58417F171300EC00398DE0 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		5E584181171300FF00398DE0 /* Iconlicious-Misc-Settings.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Iconlicious-Misc-Settings.icns"; sourceTree = "<group>"; };
+		5E5841831713024F00398DE0 /* CSO_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSO_Header.h; sourceTree = "<group>"; };
+		5E5841841713024F00398DE0 /* CSOCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSOCompressor.h; sourceTree = "<group>"; };
+		5E5841851713024F00398DE0 /* CSOCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSOCompressor.m; sourceTree = "<group>"; };
+		5E5841861713024F00398DE0 /* CSODecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSODecompressor.h; sourceTree = "<group>"; };
+		5E5841871713025000398DE0 /* CSODecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSODecompressor.m; sourceTree = "<group>"; };
+		5E5841881713025000398DE0 /* CSOManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSOManager.h; sourceTree = "<group>"; };
+		5E5841891713025000398DE0 /* CSOManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSOManager.m; sourceTree = "<group>"; };
+		5EA7E4D617136600000A6C58 /* error.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = error.log; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E5841441712F21300398DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E58414B1712F21300398DE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E58413E1712F21300398DE0 = {
+			isa = PBXGroup;
+			children = (
+				5E584181171300FF00398DE0 /* Iconlicious-Misc-Settings.icns */,
+				5E5841501712F21300398DE0 /* PSP CSO Converter */,
+				5E5841491712F21300398DE0 /* Frameworks */,
+				5E5841481712F21300398DE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E5841481712F21300398DE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E5841471712F21300398DE0 /* PSP CSO Converter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E5841491712F21300398DE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E58414A1712F21300398DE0 /* Cocoa.framework */,
+				5E58414C1712F21300398DE0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E58414C1712F21300398DE0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E58414D1712F21300398DE0 /* AppKit.framework */,
+				5E58414E1712F21300398DE0 /* CoreData.framework */,
+				5E58414F1712F21300398DE0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5E5841501712F21300398DE0 /* PSP CSO Converter */ = {
+			isa = PBXGroup;
+			children = (
+				5E58415C1712F21300398DE0 /* PCCAppDelegate.h */,
+				5E58415D1712F21300398DE0 /* PCCAppDelegate.m */,
+				5E58415F1712F21400398DE0 /* MainMenu.xib */,
+				5E5841511712F21300398DE0 /* Supporting Files */,
+			);
+			path = "PSP CSO Converter";
+			sourceTree = "<group>";
+		};
+		5E5841511712F21300398DE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E5841671712F39D00398DE0 /* images */,
+				5E5841701712FD6400398DE0 /* NSDaDFileImageView.h */,
+				5E5841711712FD6400398DE0 /* NSDaDFileImageView.m */,
+				5E5841831713024F00398DE0 /* CSO_Header.h */,
+				5E5841841713024F00398DE0 /* CSOCompressor.h */,
+				5E5841851713024F00398DE0 /* CSOCompressor.m */,
+				5E5841861713024F00398DE0 /* CSODecompressor.h */,
+				5E5841871713025000398DE0 /* CSODecompressor.m */,
+				5E5841881713025000398DE0 /* CSOManager.h */,
+				5E5841891713025000398DE0 /* CSOManager.m */,
+				5E5841521712F21300398DE0 /* PSP CSO Converter-Info.plist */,
+				5E5841531712F21300398DE0 /* InfoPlist.strings */,
+				5E5841561712F21300398DE0 /* main.m */,
+				5E5841581712F21300398DE0 /* PSP CSO Converter-Prefix.pch */,
+				5E5841591712F21300398DE0 /* Credits.rtf */,
+				5EA7E4D617136600000A6C58 /* error.log */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E5841671712F39D00398DE0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5E5841791713005A00398DE0 /* umdIcon.icns */,
+				5E5841681712F3BB00398DE0 /* dadDefault.png */,
+				5E5841731713000500398DE0 /* dadDrop.gif */,
+				5E5841741713000500398DE0 /* dadConverting.gif */,
+				5E5841771713004800398DE0 /* exitButton.png */,
+				5E58417B171300B900398DE0 /* success.png */,
+				5E58417D171300BE00398DE0 /* converting.png */,
+				5E58417F171300EC00398DE0 /* error.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E5841461712F21300398DE0 /* PSP CSO Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E5841641712F21400398DE0 /* Build configuration list for PBXNativeTarget "PSP CSO Converter" */;
+			buildPhases = (
+				5E5841431712F21300398DE0 /* Sources */,
+				5E5841441712F21300398DE0 /* Frameworks */,
+				5E5841451712F21300398DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PSP CSO Converter";
+			productName = "PSP CSO Converter";
+			productReference = 5E5841471712F21300398DE0 /* PSP CSO Converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E58413F1712F21300398DE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PCC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dream Development";
+			};
+			buildConfigurationList = 5E5841421712F21300398DE0 /* Build configuration list for PBXProject "PSP CSO Converter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E58413E1712F21300398DE0;
+			productRefGroup = 5E5841481712F21300398DE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E5841461712F21300398DE0 /* PSP CSO Converter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E5841451712F21300398DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5841551712F21300398DE0 /* InfoPlist.strings in Resources */,
+				5E58415B1712F21300398DE0 /* Credits.rtf in Resources */,
+				5E5841611712F21400398DE0 /* MainMenu.xib in Resources */,
+				5E5841691712F3BB00398DE0 /* dadDefault.png in Resources */,
+				5E5841751713000500398DE0 /* dadDrop.gif in Resources */,
+				5E5841761713000500398DE0 /* dadConverting.gif in Resources */,
+				5E5841781713004800398DE0 /* exitButton.png in Resources */,
+				5E58417A1713005A00398DE0 /* umdIcon.icns in Resources */,
+				5E58417C171300B900398DE0 /* success.png in Resources */,
+				5E58417E171300BE00398DE0 /* converting.png in Resources */,
+				5E584180171300EC00398DE0 /* error.png in Resources */,
+				5E584182171300FF00398DE0 /* Iconlicious-Misc-Settings.icns in Resources */,
+				5EA7E4D717136600000A6C58 /* error.log in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E5841431712F21300398DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5841571712F21300398DE0 /* main.m in Sources */,
+				5E58415E1712F21300398DE0 /* PCCAppDelegate.m in Sources */,
+				5E5841721712FD6400398DE0 /* NSDaDFileImageView.m in Sources */,
+				5E58418A1713025000398DE0 /* CSOCompressor.m in Sources */,
+				5E58418B1713025000398DE0 /* CSODecompressor.m in Sources */,
+				5E58418C1713025000398DE0 /* CSOManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E5841531712F21300398DE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E5841541712F21300398DE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E5841591712F21300398DE0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E58415A1712F21300398DE0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5E58415F1712F21400398DE0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E5841601712F21400398DE0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E5841621712F21400398DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5E5841631712F21400398DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5E5841651712F21400398DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSP CSO Converter/PSP CSO Converter-Prefix.pch";
+				INFOPLIST_FILE = "PSP CSO Converter/PSP CSO Converter-Info.plist";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5E5841661712F21400398DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSP CSO Converter/PSP CSO Converter-Prefix.pch";
+				INFOPLIST_FILE = "PSP CSO Converter/PSP CSO Converter-Info.plist";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E5841421712F21300398DE0 /* Build configuration list for PBXProject "PSP CSO Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5841621712F21400398DE0 /* Debug */,
+				5E5841631712F21400398DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E5841641712F21400398DE0 /* Build configuration list for PBXNativeTarget "PSP CSO Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5841651712F21400398DE0 /* Debug */,
+				5E5841661712F21400398DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E58413F1712F21300398DE0 /* Project object */;
+}
