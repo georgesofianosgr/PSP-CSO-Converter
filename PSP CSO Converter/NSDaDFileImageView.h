@@ -12,7 +12,6 @@
 
 @interface NSDaDFileImageView : NSImageView <NSDraggingDestination>
 @property id <ImageViewFileDragAndDropDelegate> delegate;
-@property (readonly) BOOL   highlighted;
 @property BOOL              dragAndDropEnabled;
 @property NSColor*          highlightColor;
 @property NSNumber*         highlightSize;
