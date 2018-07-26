@@ -33,7 +33,6 @@
         
         // Default Values
         _dragAndDropEnabled = YES;
-        _highlighted = NO;
         _highlightSize = @6.0;
         _highlightColor = [NSColor selectedControlColor];
     }
@@ -45,7 +44,7 @@
     [super drawRect:dirtyRect];
     
     // Set Highlight Color Or ClearColor For Not Highlighting
-    if([self dragAndDropEnabled] && [self highlighted])
+    if([self dragAndDropEnabled] && [self isHighlighted])
     {
         [[self highlightColor]set];
         [NSBezierPath setDefaultLineWidth:[[self highlightSize]floatValue]];
@@ -60,12 +59,6 @@
 }
 
 #pragma mark - Getters - Setters
-
-// Private Setter
-- (void)setHighlighted:(BOOL)highlighted{
-    _highlighted = highlighted;
-    [self setNeedsDisplay:YES];
-}
 
 - (NSColor*)highlightColor{
     return  _highlightColor;
