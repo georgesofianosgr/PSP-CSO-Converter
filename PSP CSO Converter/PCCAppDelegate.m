@@ -61,18 +61,25 @@
 
 - (void)convertFile:(NSString*) filePath{
     
+    if (![NSThread isMainThread]) {
+        [self performSelectorOnMainThread:@selector(convertFile:) withObject:filePath waitUntilDone:NO];
+        return;
+    }
+    
     // Open Save Panel
     NSString *saveFilePath = [self savePanelForFile:filePath];
     
     if(saveFilePath){
 
         // Update View To Convert Started
-        [self performSelectorOnMainThread:@selector(updateViewForEvent:) withObject:@"CONVERT_STARTED" waitUntilDone:YES];
+        [self updateViewForEvent:@"CONVERT_STARTED"];
         // Convert
         if([[filePath pathExtension]caseInsensitiveCompare:@"ciso"] == NSOrderedSame||
            [[filePath pathExtension]caseInsensitiveCompare:@"cso"] == NSOrderedSame)
         {
-            [csoManager decompressCSO:filePath toPath:saveFilePath];
+            dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [csoManager decompressCSO:filePath toPath:saveFilePath];
+            });
         }
         else if([[filePath pathExtension]caseInsensitiveCompare:@"iso"] == NSOrderedSame)
         {
@@ -81,11 +88,12 @@
             NSNumber *level = [NSNumber numberWithInt:[levelStr intValue]];
             if([level intValue] < 0 || [level intValue] >9)
                 level = [NSNumber numberWithInt:6];
-            
-            [csoManager compressISO:filePath toPath:saveFilePath withCompressLevel:level];
+            dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [csoManager compressISO:filePath toPath:saveFilePath withCompressLevel:level];
+            });
         }
         // Update View To Convert Ended
-        [self performSelectorOnMainThread:@selector(updateViewForEvent:) withObject:@"CONVERT_ENDED" waitUntilDone:YES];
+        [self updateViewForEvent:@"CONVERT_ENDED"];
     }
 }
 
@@ -186,6 +194,10 @@
     
 }
 - (void)updateViewPercent:(NSNumber*) percent{
+    if (![NSThread isMainThread]) {
+        [self performSelectorOnMainThread:@selector(updateViewPercent:) withObject:percent waitUntilDone:NO];
+        return;
+    }
     [[self progressPercentLabel]setStringValue:[NSString stringWithFormat:@"%@%%",percent]];
     [[self progressIndicator]setDoubleValue:[percent doubleValue]];
     [progressDockIndicator setDoubleValue:[percent doubleValue]];
@@ -221,7 +233,7 @@
 - (NSString*)savePanelForFile:(NSString*) filePath{
     
     NSString *savePath;
-    [self updateViewForEvent:@"PANEL_OPENED"];
+    [self performSelectorOnMainThread:@selector(updateViewForEvent:) withObject:@"PANEL_OPENED" waitUntilDone:YES];
     
     //NSSavePanel *sPanel = [NSSavePanel savePanel];
     [sPanel setExtensionHidden:NO];
