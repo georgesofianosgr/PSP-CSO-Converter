@@ -1,5 +1,5 @@
 # PSP CSO Converter
-PSP CSO Converter is an application for Mac OSX Mountain Lion that converts a psp game of ISO format to CSO format and backwards.
+PSP CSO Converter is an application for macOS that converts a psp game of ISO format to CSO format and backwards.
 
 I created this app a few years back and haven't code since in objective-c. Fork it or pull request if you can improve it.
 
